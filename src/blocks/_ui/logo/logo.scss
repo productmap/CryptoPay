@@ -1,0 +1,14 @@
+.logo {
+  width: 64px;
+  background-image: url("../assets/images/logo.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  aspect-ratio: 1/1;
+
+  &_nav {
+    @media screen and (max-width: 425px) {
+      border-radius: 11.5px;
+    }
+  }
+}

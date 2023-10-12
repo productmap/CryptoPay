@@ -1,0 +1,11 @@
+.section {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: minmax(280px, 1200px);
+  width: 100%;
+  padding: 0 20px;
+
+  &_wide{
+    grid-template-columns: 100%;
+  }
+}

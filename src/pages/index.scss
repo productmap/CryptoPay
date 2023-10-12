@@ -1,0 +1,33 @@
+// Общий сеттинг
+@use "../vendor/normalize.css";
+@use "variables";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// Компоненты
+@import "../blocks/_ui/common";
+@import "../blocks/_ui/page/page";
+@import "../blocks/_ui/section/section";
+@import "../blocks/_ui/nav/nav";
+@import "../blocks/_ui/logo/logo";
+@import "../blocks/_ui/menu/menu";
+@import "../blocks/_ui/button/button";
+@import "../blocks/_ui/accent/accent";
+
+// Блоки
+@import "../blocks/hero/hero";
+@import "../blocks/bots/bots";
+@import "../blocks/usecases/usecases";
+@import "../blocks/slider/slider";
+@import "../blocks/currency/currency";
+@import "../blocks/instruction/instruction";
+@import "../blocks/features/features";
+@import "../blocks/two-columns/two-columns";
+@import "../blocks/api/api";
+@import "../blocks/banner/banner";
+@import "../blocks/community/community";
+
+
+// Разделы
+@import "../blocks/header/header";
+@import "../blocks/main/main";
+@import "../blocks/footer/footer";

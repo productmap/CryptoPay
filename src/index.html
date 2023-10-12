@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>CryptoPay</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <link rel="icon" href="./favicon.png" type="image/png"/>
+</head>
+<body class="page">
+<header class="header">
+  <nav class="nav header__nav">
+    <div class="logo logo_nav header__logo"></div>
+    <ul class="menu">
+      <li class="menu__link">Use cases</li>
+      <li class="menu__link">Features</li>
+      <li class="menu__link">How to start</li>
+    </ul>
+    <button class="button button_type_primary">Get started</button>
+  </nav>
+  <div class="hero">
+    <div class="hero__cta">
+      <h1 class="hero__title">Crypto payments for <span class="accent">telegram&nbsp;bots</span></h1>
+      <p class="hero__paragraph">Seamlessly accept crypto payments<br>in&nbsp;your Telegram bots and services.</p>
+      <button class="button hero__button">Get started</button>
+      <div class="bots">
+        <img src="<%=require('./assets/images/bot_img_1.png')%>" alt="Bot1" class="bots__bot">
+        <img src="<%=require('./assets/images/bot_img_2.png')%>" alt="Bot2" class="bots__bot">
+        <img src="<%=require('./assets/images/bot_img_3.png')%>" alt="Bot3" class="bots__bot">
+        <img src="<%=require('./assets/images/bot_img_4.png')%>" alt="Bot4" class="bots__bot">
+        <img src="<%=require('./assets/images/bot_img_5.png')%>" alt="Bot5" class="bots__bot">
+        <p class="bots__caption">Popular bots use Crypto Pay</p>
+      </div>
+    </div>
+    <div class="hero__mockup">
+    </div>
+  </div>
+</header>
+<main class="main">
+  <section class="section section_wide usecases">
+    <div class="slider">
+      <div class="slider__wrapper">
+        <div class="slider__slide">
+          <img class="slider__slide-image" src="<%=require('./assets/images/usecases-slide-1.png')%>"
+               alt="Instant Auto Sales: Boost conversion">
+          <div class="slider__article">
+            <h2 class="slider__title"><span class="accent">Instant<br class="hide-sm"> Auto Sales:</span><br>Boost
+              conversion</h2>
+            <p class="slider__subtitle">Immediately&nbsp;deliver&nbsp;digital&nbsp;products and&nbsp;services&nbsp;to&nbsp;your&nbsp;users.</p>
+            <button class="button slider__button">Open API Docs</button>
+          </div>
+        </div>
+        <div class="slider__slide">
+          <img class="slider__slide-image" src="<%=require('./assets/images/usecases-slide-2.png')%>"
+               alt="Channels integration: Seamless access">
+          <div class="slider__article">
+            <h2 class="slider__title"><span class="accent">Channels <br class="hide-sm">integration:</span><br> Seamless
+              access</h2>
+            <p class="slider__subtitle">Automatically&nbsp;unlock&nbsp;exclusive&nbsp;content
+              to&nbsp;your&nbsp;users.</p>
+            <button class="button slider__button">Open API Docs</button>
+          </div>
+        </div>
+        <div class="slider__slide">
+          <img class="slider__slide-image" src="<%=require('./assets/images/usecases-slide-3.png')%>"
+               alt="Endless customization with Webhooks">
+          <div class="slider__article">
+            <h2 class="slider__title"><span class="accent">Endless&nbsp;<br class="hide-sm">customization:</span><br>
+              with Webhooks</h2>
+            <p class="slider__subtitle">Receive&nbsp;successful&nbsp;payment notifications&nbsp;in real-time.&nbsp;Integrate&nbsp;to
+              any&nbsp;scenario&nbsp;of&nbsp;your&nbsp;service.
+            </p>
+            <button class="button slider__button">Open API Docs</button>
+          </div>
+        </div>
+      </div>
+      <div class="slider__pagination-wrapper">
+        <div class="slider__current-slide"></div>
+        <div class="slider__pagination"></div>
+        <div class="slider__total-slides"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section features">
+
+    <div class="features__item features__item_lg">
+      <div class="features__header">
+        <h3 class="features__title features__title_pt0">Accept a wide range of cryptocurrencies</h3>
+        <p class="features__subtitle">Bill any supported cryptocurrencies with asset parameter in <span
+                class="accent">GetInvoice</span> method</p>
+      </div>
+      <div class="currency">
+        <figure class="currency__item">
+          <img class="currency__image" src="<%=require('./assets/images/currency_ETH.svg')%>" alt="ETH">
+          <figcaption class="currency__caption">ETH</figcaption>
+        </figure>
+        <figure class="currency__item">
+          <img class="currency__image" src="<%=require('./assets/images/currency_USDT.svg')%>" alt="USDT">
+          <figcaption class="currency__caption">USDT</figcaption>
+        </figure>
+        <figure class="currency__item">
+          <img class="currency__image" src="<%=require('./assets/images/currency_TON.svg')%>" alt="USDT">
+          <figcaption class="currency__caption">TON</figcaption>
+        </figure>
+        <figure class="currency__item">
+          <img class="currency__image" src="<%=require('./assets/images/currency_BTC.svg')%>" alt="USDT">
+          <figcaption class="currency__caption">BTC</figcaption>
+        </figure>
+        <figure class="currency__item">
+          <img class="currency__image" src="<%=require('./assets/images/currency_TRX.svg')%>" alt="USDT">
+          <figcaption class="currency__caption">TRX</figcaption>
+        </figure>
+        <figure class="currency__item">
+          <img class="currency__image" src="<%=require('./assets/images/currency_LTC.svg')%>" alt="USDT">
+          <figcaption class="currency__caption">LTC</figcaption>
+        </figure>
+        <figure class="currency__item">
+          <img class="currency__image" src="<%=require('./assets/images/currency_USDC.svg')%>" alt="USDT">
+          <figcaption class="currency__caption">USDC</figcaption>
+        </figure>
+        <figure class="currency__item">
+          <img class="currency__image" src="<%=require('./assets/images/currency_BNB.svg')%>" alt="USDT">
+          <figcaption class="currency__caption">BNB</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="features__column">
+      <div class="features__item features__item_sm">
+        <video class="features__video features__video_light" muted
+               playsinline
+               style="max-height: 150px">
+          <source src="<%=require('./assets/video/start_light3.mp4')%>" type="video/mp4">
+        </video>
+        <video class="features__video features__video_dark" playsinline muted
+               src="<%=require('./assets/video/start_dark.mp4')%>">
+        </video>
+        <h3 class="features__title">One click to start</h3>
+        <p class="features__subtitle">Open <span class="accent"><a href="https://t.me/CryptoBot">@CryptoBot</a></span>,
+          go to <span class="accent">Crypto Pay</span> and tap Create App to get API Token</p>
+      </div>
+
+      <div class="features__item features__item_sm">
+        <video class="features__video features__video_light" playsinline muted
+               src="<%=require('./assets/video/exchange_light.mp4')%>" style="max-height: 100px;object-fit: cover;">
+        </video>
+        <video class="features__video features__video_dark" playsinline muted
+               src="<%=require('./assets/video/exchange_dark.mp4')%>">
+        </video>
+        <h3 class="features__title">Real-time<br>exchange rates</h3>
+        <p class="features__subtitle">Request up to date currency rate with the <span
+                class="accent">getExchangeRates</span> API method</p>
+      </div>
+    </div>
+    <div class="features__item features__item_md">
+      <video class="features__video features__video_light features__video_cropped" playsinline muted
+             src="<%=require('./assets/video/stats_light.mp4')%>">
+      </video>
+      <video class="features__video features__video_dark" playsinline muted
+             src="<%=require('./assets/video/stats_light.mp4')%>">
+      </video>
+      <h3 class="features__title">Payment statistics</h3>
+      <p class="features__subtitle">Open <span class="accent"><a href="https://t.me/CryptoBot">@CryptoBot</a></span>, go
+        to <span class="accent">Crypto Pay</span> and My Apps, App Name to get Statistics</p>
+    </div>
+    <div class="features__item features__item_md features__item_pt0">
+      <video class="features__video features__video_light features__video_wide" playsinline muted
+             src="<%=require('./assets/video/send_coins_light.mp4')%>">
+      </video>
+      <video class="features__video features__video_dark features__video_wide" playsinline muted
+             src="<%=require('./assets/video/send_coins_dark.mp4')%>">
+      </video>
+      <h3 class="features__title">Send coins to users</h3>
+      <p class="features__subtitle">Automate payouts to users with <span class="accent">transfer</span> API method</p>
+    </div>
+    <div class="features__item features__item_sm">
+      <video class="features__video features__video_light features__video_wide" playsinline muted
+             src="<%=require('./assets/video/payments_light.mp4')%>">
+      </video>
+      <video class="features__video features__video_dark features__video_wide"playsinline muted
+             src="<%=require('./assets/video/payments_dark.mp4')%>">
+      </video>
+      <h3 class="features__title">Anonymous payments</h3>
+      <p class="features__subtitle" style="padding-bottom: 63px;">Use allow_anonymous parameter in&nbsp;<span
+              class="accent">createInvoice</span>
+        method to
+        give&nbsp;user an&nbsp;option&nbsp;to remain private</p>
+    </div>
+  </section>
+
+  <section class="section instruction">
+    <h2 class="instruction__title">Quick start using <span class="accent">Crypto&nbsp;Pay</span></h2>
+
+    <div class="two-columns">
+      <picture>
+        <source srcset="<%=require('./assets/images/quick-start-1-s.png')%>" media="(max-width: 768px)"/>
+        <img class="instruction__image" src="<%=require('./assets/images/quick-start-1.png')%>"
+             alt="Authorizing your app">
+      </picture>
+      <div class="two-columns__article">
+        <div class="two-columns__article-column">
+          <span class="two-columns__step">1</span>
+        </div>
+        <div class="two-columns__article-column">
+          <h3 class="two-columns__list-title">Authorizing your app</h3>
+          <ol class="two-columns__list">
+            <li>Open <span class="accent"><a href="https://t.me/CryptoBot">@CryptoBot</a></span></li>
+            <li>Go to <span class="accent">Crypto&nbsp;Pay</span></li>
+            <li>Tap <span class="accent">Create App</span></li>
+            <li>Get<span class="accent"> API&nbsp;Token</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-columns">
+      <picture>
+        <source srcset="<%=require('./assets/images/quick-start-2-s.png')%>" media="(max-width: 768px)"/>
+        <img class="instruction__image" src="<%=require('./assets/images/quick-start-2.png')%>"
+             alt="Crypto Pay API Request">
+      </picture>
+      <div class="two-columns__article">
+        <div class="two-columns__article-column">
+          <span class="two-columns__step">2</span>
+        </div>
+        <div class="two-columns__article-column">
+          <h3 class="two-columns__list-title">Crypto&nbsp;Pay API&nbsp;Request</h3>
+          <p class="two-columns__paragraph">Requests are only served over HTTPS To&nbsp;pass&nbsp;parameters use:</p>
+          <ul class="two-columns__list two-columns__list_type_bullets">
+            <li><span class="accent">URL query string</span></li>
+            <li><span class="accent">application/json</span></li>
+            <li><span class="accent">application/x-www-form-urlencoded</span></li>
+            <li><span class="accent">multipart/form-data</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-columns">
+      <picture>
+        <source srcset="<%=require('./assets/images/quick-start-3-s.png')%>" media="(max-width: 768px)"/>
+        <img class="instruction__image" src="<%=require('./assets/images/quick-start-3.png')%>"
+             alt="Getting updates">
+      </picture>
+      <div class="two-columns__article">
+        <div class="two-columns__article-column">
+          <span class="two-columns__step">3</span>
+        </div>
+        <div class="two-columns__article-column">
+          <h3 class="two-columns__list-title">Getting updates</h3>
+          <p class="two-columns__paragraph">There are two ways of receiving updates&nbsp;for&nbsp;your&nbsp;app:</p>
+          <ul class="two-columns__list two-columns__list_type_bullets">
+            <li><span class="accent">getInvoices</span> method to get a list of created invoices.</li>
+            <li><span class="accent">Webhooks</span> to receive updates in realtime.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="section api">
+    <div class="banner">
+      <h2 class="banner__title">Crypto Pay API</h2>
+      <p class="banner__paragraph">Explore available methods and types and&nbsp;integrate them in any programming
+        language.</p>
+      <button class="button button_type_secondary banner__button" type="button">Open API Docs</button>
+    </div>
+  </section>
+
+  <section class="section community">
+    <h2 class="community__title">Join dev community</h2>
+    <p class="community__paragraph">Connect with bot developers and explore the possibilities our crypto payments
+      service unlocks.</p>
+    <ul class="community__list">
+      <li class="community__item">
+        <img class="community__item-image"
+             src="<%=require('./assets/images/community/js.svg')%>"
+             alt="crypto-pay-api">
+        <p class="community__item-description">crypto-pay-api</p>
+      </li>
+      <li class="community__item">
+        <img class="community__item-image"
+             src="<%=require('./assets/images/community/net.svg')%>"
+             alt="CryptoPay">
+        <p class="community__item-description">CryptoPay</p>
+      </li>
+      <li class="community__item">
+        <img class="community__item-image"
+             src="<%=require('./assets/images/community/php.svg')%>"
+             alt="crypto-pay-api">
+        <p class="community__item-description">crypto-pay-api</p>
+      </li>
+      <li class="community__item">
+        <img class="community__item-image"
+             src="<%=require('./assets/images/community/python.svg')%>"
+             alt="aiocryptopay">
+        <p class="community__item-description">aiocrypto pay</p>
+      </li>
+      <li class="community__item">
+        <img class="community__item-image"
+             src="<%=require('./assets/images/community/go.svg')%>"
+             alt="cryptobot-sdk-golang">
+        <p class="community__item-description">cryptobot-sdk-golang</p>
+      </li>
+    </ul>
+    <button class="button community__button" type="button">Open Devs chat</button>
+  </section>
+</main>
+
+<footer class="footer">
+  <nav class="nav">
+    <div class="logo logo_nav footer__logo"></div>
+    <ul class="menu">
+      <li class="menu__link footer__link">Use cases</li>
+      <li class="menu__link footer__link">Features</li>
+      <li class="menu__link footer__link">How to start</li>
+    </ul>
+    <button class="button button_type_secondary" type="button">Get started</button>
+  </nav>
+  <div class="footer__copyright">©2023 Crypto Bot</div>
+</footer>
+</body>
+</html>

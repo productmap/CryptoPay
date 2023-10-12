@@ -1,0 +1,13 @@
+/node_modules/
+/package-lock.json
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/.gitignore
+/.idea/compiler.xml
+/design/
+/dist/
+/.idea/CryptoPay.iml
+/.idea/jsLibraryMappings.xml
+/.idea/modules.xml
+/.idea/prettier.xml
+/.idea/vcs.xml
+/.idea/watcherTasks.xml

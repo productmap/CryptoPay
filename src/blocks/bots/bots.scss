@@ -1,0 +1,51 @@
+.bots {
+  padding-top: 56px;
+  margin: 0;
+  @media screen and (max-width: 1024px) {
+    padding-top: 24px;
+  }
+
+  &__caption {
+    padding-top: 14px;
+    margin: 0;
+    color: var(--color-paragraph);
+    @media screen and (max-width: 428px) {
+      padding-top: 12px;
+      font-size: 18px;
+    }
+  }
+
+  &__bot {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 96px;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    outline: 4px solid var(--color-background-primary);
+    transition: ease 0.3s;
+    aspect-ratio: 1/1;
+
+    &:not(:first-child) {
+      margin-left: -36px;
+      @media screen and (max-width: 428px) {
+        margin-left: -18px;
+      }
+    }
+
+    &:hover {
+      z-index: 5;
+      transform: scale(1.15);
+    }
+
+    &.blurred {
+      filter: blur(1px);
+    }
+
+    @media screen and (max-width: 428px) {
+      width: 60px;
+      outline: 3px solid var(--color-background-primary);
+    }
+  }
+}

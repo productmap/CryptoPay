@@ -1,0 +1,69 @@
+.currency {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(8, 96px);
+  width: 100%;
+  padding-top: 48px;
+  margin: 0;
+  transition: ease 1.4s;
+  @media screen and (max-width: 780px) {
+    grid-template-columns: repeat(4, minmax(56px, 96px));
+    padding: 0;
+    gap: 12px;
+  }
+
+  &__item {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-flow: column;
+
+    &.active {
+      @for $i from 1 through 8 {
+        $delay: calc($i / 2);
+        &:nth-child(#{$i}) {
+          animation-delay: $delay+s;
+          animation-duration: .5s;
+          animation-name: zoom;
+        }
+      }
+    }
+  }
+
+  &__image {
+    aspect-ratio: 1/1;
+    //width: max(56px, 96px);
+    padding: 0;
+    margin: 0;
+  }
+
+  &__caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 14px;
+    color: var(--Dark-40, rgba(17, 17, 17, 0.40));
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

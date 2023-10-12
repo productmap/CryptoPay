@@ -1,0 +1,22 @@
+.header {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: minmax(280px, 1200px);
+  width: 100%;
+  padding: 0 20px;
+
+  &__nav {
+    padding: 40px 0;
+    @media screen and (max-width: 425px) {
+      padding: 50px 0;
+    }
+  }
+
+  &__logo {
+    margin-right: 100px;
+    @media screen and (max-width: 425px) {
+      width: 46px;
+      margin-right: 0;
+    }
+  }
+}

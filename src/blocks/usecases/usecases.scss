@@ -1,0 +1,9 @@
+.usecases {
+  padding-top: 196px;
+  padding-bottom: 196px;
+  background: var(--block-background-secondary);
+  @media screen and (max-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}

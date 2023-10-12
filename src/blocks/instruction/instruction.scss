@@ -1,0 +1,29 @@
+.instruction {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: var(--block-background);
+  @media screen and (max-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  &__title {
+    color: var(--color-title);
+    text-align: center;
+    @media screen and (max-width: 768px) {
+      font-size: 32px;
+      letter-spacing: -0.96px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    max-width: 590px;
+    min-width: 280px;
+    @media screen and (max-width: 768px) {
+      object-fit: cover;
+      object-position: 70% 15%;
+    }
+  }
+}

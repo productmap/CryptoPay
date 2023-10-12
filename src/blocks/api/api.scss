@@ -1,0 +1,8 @@
+.api {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  @media screen and (max-width: 746px) {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+}

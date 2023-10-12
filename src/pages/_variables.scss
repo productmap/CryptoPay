@@ -1,0 +1,71 @@
+:root {
+  // Базовая палитра
+  --General: #41a4df;
+  --Main-text: #252525;
+  --White: #fff;
+  --White-24: rgba(255, 255, 255, 0.24);
+  --White-60: rgba(255, 255, 255, 0.6);
+  --White-80: rgba(255, 255, 255, 0.8);
+  --Blue: #41a4df;
+  --Blue-12: rgba(41, 126, 226, 0.12);
+  --Dark: #0d0d12;
+  --Dark-80: rgba(17, 17, 17, 0.8);
+  --Deep-blue: #297ee2;
+  --Dark-blue: #232328;
+  --Bg-light: #f7f9fb;
+  --Bg-dark: #18181d;
+
+  //  Swiper
+  --swiper-pagination-color: var(--Blue);
+  --swiper-pagination-bullet-inactive-color: var(--White-24);
+}
+
+// Светлая тема
+.light {
+  --color-title: var(--Dark);
+  --color-paragraph: var(--Dark-80);
+  --color-text-accent: var(--Blue);
+  --color-background-primary: var(--White);
+  --block-background: var(--Bg-light);
+  --block-background-secondary: var(--Dark-blue);
+  // primary button
+  --color-primary-button-text: var(--Deep-blue);
+  --color-primary-button-background: var(--Blue-12);
+  --color-primary-button-border: var(--White);
+  // secondary button
+  --color-secondary-button-text: var(--White);
+  --color-secondary-button-background: transparent;
+  --color-secondary-button-border: var(--White);
+  // Нумерация шагов
+  --color-background-step: linear-gradient(220deg, #010417 10.26%, #2B333F 84.25%), linear-gradient(46deg, #000 15.89%, #434343 171.16%);
+  // Mockup
+  --mockup: url("../assets/images/mockup-light.png");
+  // Video theming
+  --video-light: block;
+  --video-dark: none;
+}
+
+// Темная тема
+.dark {
+  --color-title: var(--White);
+  --color-paragraph: var(--White-80);
+  --color-text-accent: var(--Blue);
+  --color-background-primary: var(--Dark);
+  --block-background: var(--Bg-dark);
+  --block-background-secondary: var(--Bg-dark);
+  // primary button
+  --color-primary-button-text: var(--White);
+  --color-primary-button-background: transparent;
+  --color-primary-button-border: var(--White);
+  // secondary button
+  --color-secondary-button-text: var(--White);
+  --color-secondary-button-background: transparent;
+  --color-secondary-button-border: var(--White);
+  // Нумерация шагов
+  --color-background-step: var(--White);
+  // Mockup
+  --mockup: url("../assets/images/mockup-dark.png");
+  // Video theming
+  --video-light: none;
+  --video-dark: block;
+}

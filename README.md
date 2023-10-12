@@ -1,5 +1,5 @@
 # CryptoPay
-Landing page for CryptoPay
+Landing page for CryptoPay v.1
 
 ![Главный экран](https://github.com/productmap/CryptoPay/assets/122282551/154d850a-b75d-4e8c-a908-c6e817d929c0)
 
@@ -10,14 +10,17 @@ Landing page for CryptoPay
 ## Frontend stack
 - BEM methodology
 - SCSS
+- JS components
 - Swiper
 - Webpack
-    - svg inlining
-    - minify
+
+## In progress... v.2
+- Next.js
+- React components
+- Interactive SVG animation
 
 ## Контакты
 
 - Еремин Владислав
-- ceo@rocket.name
+- info@rocket.name
 - https://t.me/brandevangelist
-- 

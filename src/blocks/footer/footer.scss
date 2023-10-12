@@ -1,0 +1,31 @@
+.footer {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: minmax(280px, 1200px);
+  width: 100%;
+  padding: 120px 20px 40px;
+  background: var(--block-background-secondary);
+
+  &__logo {
+    margin-right: 100px;
+    @media screen and (max-width: 768px) {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    color: var(--White);
+  }
+
+  &__copyright {
+    padding-top: 24px;
+    color: var(--White);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    @media screen and (max-width: 425px) {
+      font-size: 18px;
+    }
+  }
+}
