@@ -110,6 +110,7 @@ scrollTrigger(".features__video", {
   },
 });
 
+// Воспроизведение по клику
 const videos = document.querySelectorAll(".features__video");
 videos.forEach((video) => {
   video.addEventListener("click", () => {
